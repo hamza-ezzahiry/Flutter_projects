@@ -35,3 +35,10 @@ In this course, you will learn how :
 - **[Flutter official webiste](flutter.dev)**
 - **[Dart official webiste](dart.dev)**
 - **[Online Dart editor](dartpad.dev)**
+
+### Advices : 
+ 
+when i wanna upload the project on github, I find out that the projet size is very big. so i try this command to reduce the size from (~250Mo) to (~1.5Mo)
+
+``find . -name "pubspec.yaml" -execdir flutter clean \;``
+
