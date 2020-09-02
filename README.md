@@ -35,6 +35,10 @@ In this course, you will learn how :
 - **[Flutter official webiste](flutter.dev)**
 - **[Dart official webiste](dart.dev)**
 - **[Online Dart editor](dartpad.dev)**
+- **[Material Design](https://material.io)**
+- **[Appicon](appicon.co)**
+
+
 
 ### Advices : 
  
