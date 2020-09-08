@@ -10,27 +10,13 @@ class MyApp extends StatelessWidget {
         home: Scaffold(
           backgroundColor: Colors.blueGrey,
           body: SafeArea(
-            child: Row(
+            child: Column(
               children: <Widget>[
-                Container(
-                  color: Colors.white,
-                  child: Center(child: Text('Container 1')),
-                  height: 100,
-                  width: 100,
-                ),
-                Container(
-                  color: Colors.blue,
-                  child: Center(child: Text('Container 2')),
-                  height: 100,
-                  width: 100,
-                ),
-                Container(
-                  color: Colors.yellowAccent,
-                  child: Center(child: Text('Container 3')),
-                  height: 100,
-                  width: 100,
-                ),
+                CircleAvatar(
+                  radius: 55,
+                )
               ],
+            ),
             ),
           ),
         ));
