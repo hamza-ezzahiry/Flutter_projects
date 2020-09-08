@@ -23,4 +23,16 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets
+    - assets/me.jpg
+  fonts:
+    - family: GreatVibes
+      fonts:
+        - asset: fonts/GreatVibes-Regular.ttf
+
+    - family: ArefRuqaa
+      fonts:
+        - asset: fonts/ArefRuqaa-Bold.ttf
+
+    - family: Gabriela
+      fonts:
+        - asset: fonts/Gabriela-Regular.ttf
