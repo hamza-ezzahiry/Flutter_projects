@@ -24,6 +24,7 @@ flutter:
 
   assets:
     - assets/me.jpg
+
   fonts:
     - family: GreatVibes
       fonts:
@@ -36,3 +37,7 @@ flutter:
     - family: Gabriela
       fonts:
         - asset: fonts/Gabriela-Regular.ttf
+
+    - family: MyFlutterApp
+      fonts:
+        - asset: fonts/MyFlutterApp.ttf
