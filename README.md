@@ -32,11 +32,13 @@ In this course, you will learn how :
 
 ### Resources  
 
-- **[Flutter official webiste](flutter.dev)**
-- **[Dart official webiste](dart.dev)**
-- **[Online Dart editor](dartpad.dev)**
+- **[Flutter official webiste](https://flutter.dev)**
+- **[Dart official webiste](https://dart.dev)**
+- **[Online Dart editor](https://dartpad.dev)**
 - **[Material Design](https://material.io)**
-- **[Appicon](appicon.co)**
+- **[Appicon](https://appicon.co)**
+- **[free fonts from Google](https://fonts.google.com/)**
+- **[FlutterIcon - Flutter custom icons generator](https://www.fluttericon.com)**
 
 
 
@@ -45,4 +47,9 @@ In this course, you will learn how :
 when i wanna upload the project on github, I find out that the projet size is very big. so i try this command to reduce the size from (~250Mo) to (~1.5Mo)
 
 ``find . -name "pubspec.yaml" -execdir flutter clean \;``
+
+### From Design to flutter code 
+
+- **[Convert Adobe XD designs into working code to build native apps with Google’s Flutter](https://xd.adobelanding.com/xd-to-flutter/)**
+- **[supernova.io](https://supernova.io/features/flutter)**
 
