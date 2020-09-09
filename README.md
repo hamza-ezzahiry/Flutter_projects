@@ -39,7 +39,7 @@ In this course, you will learn how :
 - **[Appicon](https://appicon.co)**
 - **[free fonts from Google](https://fonts.google.com/)**
 - **[FlutterIcon - Flutter custom icons generator](https://www.fluttericon.com)**
-
+- **[Itsallwidgets | List of apps built with Flutter (with code)](https://itsallwidgets.com)**
 
 
 ### Advices : 
