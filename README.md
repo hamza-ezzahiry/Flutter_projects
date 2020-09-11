@@ -30,7 +30,7 @@ In this course, you will learn how :
 <img src="https://flutter.dev/assets/flutter-lockup-1caf6476beed76adec3c477586da54de6b552b2f42108ec5bc68dc63bae2df75.png" width="210" >
 
 
-### Resources  
+## Resources  
 
 - **[Flutter official webiste](https://flutter.dev)**
 - **[Dart official webiste](https://dart.dev)**
@@ -42,13 +42,17 @@ In this course, you will learn how :
 - **[Itsallwidgets | List of apps built with Flutter (with code)](https://itsallwidgets.com)**
 
 
-### Advices : 
+## Problem solved && some Advices : 
  
-when i wanna upload the project on github, I find out that the projet size is very big. so i try this command to reduce the size from (~250Mo) to (~1.5Mo)
+- when i wanna upload the project on github, I find out that the projet size is very big. so i try this command to reduce the size from (~250Mo) to (~1.5Mo)
 
 ``find . -name "pubspec.yaml" -execdir flutter clean \;``
 
-### From Design to flutter code 
+- when you got this error ***Windows git “warning: LF will be replaced by CRLF”***, try this ":
+
+``git config --global core.autocrlf false``
+
+## From Design to flutter code 
 
 - **[Convert Adobe XD designs into working code to build native apps with Google’s Flutter](https://xd.adobelanding.com/xd-to-flutter/)**
 - **[supernova.io](https://supernova.io/features/flutter)**
