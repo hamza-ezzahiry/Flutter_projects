@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 void main() {
   return runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.redAccent,
         appBar: AppBar(
           title: Text('Dicee'),
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.redAccent,
         ),
         body: DicePage(),
       ),
@@ -21,8 +22,22 @@ class DicePage extends StatelessWidget {
     return Center(
       child: Row(
         children: <Widget>[
-          Expanded(child: Image.asset('/images/dice1.png')),
-          Expanded(child: Image.asset('/images/dice1.png')),
+          Expanded(
+            child: FlatButton(
+              onPressed: () {
+                print('hello');
+              },
+              child: Image.asset('images/dice1.png'),
+            ),
+          ),
+          Expanded(
+            child: FlatButton(
+              onPressed: () {
+                print('hello 2');
+              },
+              child: Image.asset('images/dice4.png'),
+            ),
+          ),
         ],
       ),
     );
