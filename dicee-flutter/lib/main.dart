@@ -29,7 +29,7 @@ class _DicePageState extends State<DicePage> {
   int rightnum = 3;
   void change() {
     setState(() {
-      leftnum = 1 + r.nextInt(5);
+      leftnum = 1 + r.nextInt(6);
       rightnum = 1 + r.nextInt(6);
     });
   }
