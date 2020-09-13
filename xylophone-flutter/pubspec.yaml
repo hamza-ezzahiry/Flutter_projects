@@ -24,4 +24,7 @@ flutter:
 
   assets:
     - assets/
-
+  fonts:
+    - family: ArefRuqaa
+      fonts:
+        - asset: fonts/ArefRuqaa-Bold.ttf
