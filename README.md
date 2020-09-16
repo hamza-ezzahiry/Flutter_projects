@@ -69,4 +69,11 @@ In this course, you will learn how :
 ### 2- mi_card (My business card) 
 <img src="https://pbs.twimg.com/media/Ehb9-YQXkAAFdYz?format=jpg&name=large" width="210" >
 
+### 3- Magic 8 ball  
+
+
+### 4- Xylophone App 
+
+### 5- Quizzler App
+
 
