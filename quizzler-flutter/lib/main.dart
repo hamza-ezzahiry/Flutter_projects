@@ -27,7 +27,12 @@ class QuizPage extends StatefulWidget {
 
 class _QuizPageState extends State<QuizPage> {
   List<Icon> iconats = [];
-  List<String> questions = [];
+  List<String> questions = [
+    'Only character or integer can be used in switch statement',
+    '#define is known as preprocessor compiler directive.',
+    'Algorithm is the graphical representation of logic. ',
+    'sizeof( ) is a function that returns the size of a variable.',
+  ];
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -101,7 +106,8 @@ class _QuizPageState extends State<QuizPage> {
 }
 
 /*
-question1: 'You can lead a cow down stairs but not up stairs.', false,
-question2: 'Approximately one quarter of human bones are in the feet.', true,
-question3: 'A slug\'s blood is green.', true,
+question1: 'Only character or integer can be used in switch statement', false,
+question2: '#define is known as preprocessor compiler directive.', true,
+question3: 'Algorithm is the graphical representation of logic. ', false,
+question4: 'sizeof( ) is a function that returns the size of a variable.' , false,
 */
