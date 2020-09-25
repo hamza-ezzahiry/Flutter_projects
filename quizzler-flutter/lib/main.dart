@@ -33,6 +33,7 @@ class _QuizPageState extends State<QuizPage> {
     'Algorithm is the graphical representation of logic. ',
     'sizeof( ) is a function that returns the size of a variable.',
   ];
+  int
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -45,7 +46,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                'Elon Musk is CEO of Microsoft',
+                questions[0],
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,
@@ -83,18 +84,19 @@ class _QuizPageState extends State<QuizPage> {
           child: Padding(
             padding: EdgeInsets.all(15.0),
             child: FlatButton(
-              color: Colors.red,
-              child: Text(
-                'False',
-                style: TextStyle(
-                  fontSize: 20.0,
-                  color: Colors.white,
+                color: Colors.red,
+                child: Text(
+                  'False',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    color: Colors.white,
+                  ),
                 ),
-              ),
-              onPressed: () {
-                //The user picked false
-              },
-            ),
+                onPressed: () {
+                  setState(() {
+
+                  });
+                }),
           ),
         ),
         Row(
