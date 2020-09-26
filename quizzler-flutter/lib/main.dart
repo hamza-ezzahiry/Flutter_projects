@@ -8,7 +8,7 @@ class Quizzler extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.grey.shade900,
+        backgroundColor: Colors.blueGrey[900],
         body: SafeArea(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 10.0),
@@ -25,6 +25,8 @@ class QuizPage extends StatefulWidget {
   _QuizPageState createState() => _QuizPageState();
 }
 
+int i = 0;
+
 class _QuizPageState extends State<QuizPage> {
   List<Icon> iconats = [];
   List<String> questions = [
@@ -33,7 +35,22 @@ class _QuizPageState extends State<QuizPage> {
     'Algorithm is the graphical representation of logic. ',
     'sizeof( ) is a function that returns the size of a variable.',
   ];
-  int
+  List<bool> answers = [false, true, false, false];
+  void check_ans(bool x) {
+    if (x == answers[i])
+      iconats.add(Icon(
+        Icons.check,
+        color: Colors.green,
+      ));
+    else
+      iconats.add(Icon(
+        Icons.close,
+        color: Colors.red,
+      ));
+    i++;
+    if (i == 4) i = 0;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -46,7 +63,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                questions[0],
+                questions[i],
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,
@@ -71,10 +88,7 @@ class _QuizPageState extends State<QuizPage> {
               ),
               onPressed: () {
                 setState(() {
-                  iconats.add(Icon(
-                    Icons.check,
-                    color: Colors.green,
-                  ));
+                  check_ans(true);
                 });
               },
             ),
@@ -94,7 +108,7 @@ class _QuizPageState extends State<QuizPage> {
                 ),
                 onPressed: () {
                   setState(() {
-
+                    check_ans(false);
                   });
                 }),
           ),
