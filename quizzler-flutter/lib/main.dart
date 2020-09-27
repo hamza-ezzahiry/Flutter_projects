@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'questions.dart';
+import 'quizbrain.dart';
 
+QuizBrain qb = QuizBrain();
 void main() => runApp(Quizzler());
 
 class Quizzler extends StatelessWidget {
@@ -30,20 +31,9 @@ int i = 0;
 
 class _QuizPageState extends State<QuizPage> {
   List<Icon> iconats = [];
-  List<Question> ListOfQuestions = [
-    Question(
-        q: 'Only character or integer can be used in switch statement',
-        a: false),
-    Question(
-        q: '#define is known as preprocessor compiler directive.', a: true),
-    Question(
-        q: 'Algorithm is the graphical representation of logic.', a: false),
-    Question(
-        q: 'sizeof( ) is a function that returns the size of a variable.',
-        a: false),
-  ];
-  void check_ans(bool x) {
-    if (x == ListOfQuestions[i].answer)
+
+  void Check_ans(bool x) {
+    if (x == qb.listOfQuestions[i].answer)
       iconats.add(Icon(
         Icons.check,
         color: Colors.green,
@@ -69,7 +59,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                ListOfQuestions[i].questiontext,
+                qb.listOfQuestions[i].questiontext,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,
@@ -94,7 +84,7 @@ class _QuizPageState extends State<QuizPage> {
               ),
               onPressed: () {
                 setState(() {
-                  check_ans(true);
+                  Check_ans(true);
                 });
               },
             ),
@@ -114,7 +104,7 @@ class _QuizPageState extends State<QuizPage> {
                 ),
                 onPressed: () {
                   setState(() {
-                    check_ans(false);
+                    Check_ans(false);
                   });
                 }),
           ),
