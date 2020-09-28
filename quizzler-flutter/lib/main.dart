@@ -43,6 +43,7 @@ class _QuizPageState extends State<QuizPage> {
         Icons.close,
         color: Colors.red,
       ));
+    print(iconats.length);
     i++;
     if (i == 4) i = 0;
   }
