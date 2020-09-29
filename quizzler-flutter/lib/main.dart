@@ -27,13 +27,11 @@ class QuizPage extends StatefulWidget {
   _QuizPageState createState() => _QuizPageState();
 }
 
-int i = 0;
-
 class _QuizPageState extends State<QuizPage> {
   List<Icon> iconats = [];
 
   void Check_ans(bool x) {
-    if (x == qb.getAnswer(i))
+    if (x == qb.getAnswer())
       iconats.add(Icon(
         Icons.check,
         color: Colors.green,
@@ -43,9 +41,7 @@ class _QuizPageState extends State<QuizPage> {
         Icons.close,
         color: Colors.red,
       ));
-    print(iconats.length);
-    i++;
-    if (i == 4) i = 0;
+    qb.nextQuestion();
   }
 
   @override
@@ -60,7 +56,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                qb.getQuestion(i),
+                qb.getQuestion(),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,

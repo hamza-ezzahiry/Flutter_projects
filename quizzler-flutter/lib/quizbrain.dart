@@ -1,6 +1,8 @@
 import 'questions.dart';
 
 class QuizBrain {
+  int _nb_question = 0;
+
   List<Question> _listOfQuestions = [
     Question(
         q: 'Only character or integer can be used in switch statement',
@@ -13,11 +15,15 @@ class QuizBrain {
         q: 'sizeof( ) is a function that returns the size of a variable.',
         a: false),
   ];
-  String getQuestion(int nb_question) {
-    return (_listOfQuestions[nb_question].questiontext);
+  String getQuestion() {
+    return (_listOfQuestions[_nb_question].questiontext);
   }
 
-  bool getAnswer(int nb_question) {
-    return (_listOfQuestions[nb_question].answer);
+  bool getAnswer() {
+    return (_listOfQuestions[_nb_question].answer);
+  }
+
+  void nextQuestion() {
+    if (_nb_question < _listOfQuestions.length - 1) _nb_question++;
   }
 }
