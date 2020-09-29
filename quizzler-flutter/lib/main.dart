@@ -33,7 +33,7 @@ class _QuizPageState extends State<QuizPage> {
   List<Icon> iconats = [];
 
   void Check_ans(bool x) {
-    if (x == qb.listOfQuestions[i].answer)
+    if (x == qb.getAnswer(i))
       iconats.add(Icon(
         Icons.check,
         color: Colors.green,
@@ -60,7 +60,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                qb.listOfQuestions[i].questiontext,
+                qb.getQuestion(i),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,
