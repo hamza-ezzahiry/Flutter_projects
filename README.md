@@ -72,6 +72,7 @@ In this course, you will learn how :
 
 ### 3- Magic 8 ball  
 
+<img src="https://i.imgur.com/iqeSJWn.jpeg" width="210" >
 
 ### 4- Xylophone App 
 
