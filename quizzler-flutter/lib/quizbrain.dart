@@ -26,4 +26,8 @@ class QuizBrain {
   void nextQuestion() {
     if (_nb_question < _listOfQuestions.length - 1) _nb_question++;
   }
+
+  int getNbOfQuestion() {
+    return (_listOfQuestions.length);
+  }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'quizbrain.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 
 QuizBrain qb = QuizBrain();
 void main() => runApp(Quizzler());
@@ -29,19 +30,31 @@ class QuizPage extends StatefulWidget {
 
 class _QuizPageState extends State<QuizPage> {
   List<Icon> iconats = [];
-
+  int correctAns = 0;
   void Check_ans(bool x) {
-    if (x == qb.getAnswer())
-      iconats.add(Icon(
-        Icons.check,
-        color: Colors.green,
-      ));
-    else
-      iconats.add(Icon(
-        Icons.close,
-        color: Colors.red,
-      ));
-    qb.nextQuestion();
+    if (iconats.length == 4) {
+      Alert(
+        context: context,
+        title: "Kmlti!",
+        desc: "Your score is $correctAns / 4",
+      ).show();
+      iconats.clear();
+      correctAns = 0;
+    } else {
+      if (x == qb.getAnswer()) {
+        correctAns++;
+        iconats.add(Icon(
+          Icons.check,
+          color: Colors.green,
+        ));
+      } else
+        iconats.add(Icon(
+          Icons.close,
+          color: Colors.red,
+        ));
+
+      qb.nextQuestion();
+    }
   }
 
   @override
